@@ -17,7 +17,6 @@ namespace RBTreeUnitTests
             tree.Clear();
             Assert.AreEqual(true, tree.IsEmpty());
         }
-		
 
         [TestMethod]
         public void CheckInsertString()
