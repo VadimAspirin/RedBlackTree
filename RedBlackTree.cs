@@ -10,7 +10,7 @@ namespace RBTree
     {
         public Node<T> Root;
 		
-		public RedBlackTree()
+	public RedBlackTree()
         {
             Root = null;
         }
@@ -236,9 +236,9 @@ namespace RBTree
             Node<T> z;
             z = Find(elem);
             if (z == null) 
-				return false;
+		return false;
             if (z.LeftChild == null || z.RightChild == null) 
-				y = z;
+		y = z;
             else
             {
                 y = z.RightChild;
@@ -250,7 +250,7 @@ namespace RBTree
             else
                 x = y.RightChild;
             if (x != null) 
-				x.Parent = y.Parent;
+		x.Parent = y.Parent;
             if (y.Parent != null)
             {
                 if (y == y.Parent.LeftChild)
