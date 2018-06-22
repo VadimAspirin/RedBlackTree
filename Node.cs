@@ -17,7 +17,7 @@ namespace RBTree
         public Node(T data, Node<T> parent)
         {
             Key = data;
-			LeftChild = null;
+	    LeftChild = null;
             RightChild = null;
             Parent = parent;
             Color = 'R';
