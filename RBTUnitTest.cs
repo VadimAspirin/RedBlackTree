@@ -43,7 +43,7 @@ namespace RBTreeUnitTests
             Assert.AreEqual(null, tree.Find("d"));
         }
 		
-		[TestMethod]
+	[TestMethod]
         public void CheckInsertInteger()
         {
             RedBlackTree<int> tree = new RedBlackTree<int>();
@@ -63,7 +63,8 @@ namespace RBTreeUnitTests
             Assert.AreEqual(null, tree.Find(4));
         }
 		
-		public void CheckColoring()
+	[TestMethod]
+	public void CheckColoring()
         {
             RedBlackTree<int> tree = new RedBlackTree<int>();
             for (int i = 0; i < 3; i++)
@@ -73,7 +74,8 @@ namespace RBTreeUnitTests
             Assert.AreEqual("R", tree.Root.RightChild.Color);
         }
 
-		public void CheckInserting()
+	[TestMethod]
+	public void CheckInserting()
         {
             RedBlackTree<int> tree = new RedBlackTree<int>();
             for (int i = 0; i < 3; i++)
@@ -93,7 +95,6 @@ namespace RBTreeUnitTests
             Assert.AreEqual(5, tree.FindPrevious(6).Key);
             Assert.AreEqual(null, tree.FindNext(9));
             Assert.AreEqual(0, tree.FindPrevious(0).Key);
-        }
-		
+        }	
     }
 }
